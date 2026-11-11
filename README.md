@@ -8,18 +8,28 @@ Repo này chỉ chứa hướng dẫn, thông tin phiên bản và các file app
 
 Các bản được phát hành nằm trong [Releases](https://github.com/TKNguyenn/daymatic-releases/releases).
 
-- **Windows:** dùng bộ cài `Daymatic-Setup-<version>.exe` khi có bản phát hành.
-- **Ubuntu Desktop 24.04 x64:** dùng `Daymatic-<version>-ubuntu-24.04-x86_64.tar.gz`, giữ nguyên cả thư mục sau khi giải nén.
+- **Windows x64:** tải `Daymatic-Setup-1.2.4.exe`, mở và làm theo trình cài đặt.
+- **Ubuntu Desktop 24.04 x64 (amd64):** tải `Daymatic-1.2.4-ubuntu-24.04-amd64.deb`, mở bằng **App Center**, chọn **Install**, rồi mở Daymatic từ menu ứng dụng.
 
 Nếu chưa có file cho hệ điều hành của bạn trong Releases, bản đó chưa được phát hành. Không tải các file Source code ZIP/tar.gz tự sinh của GitHub: chúng chỉ chứa tài liệu của repo này.
 
 ## Dùng trên Ubuntu
 
-Đăng nhập desktop bằng tài khoản người dùng bình thường, mở khóa GNOME login keyring, rồi chạy `Daymatic gui`. Không chạy bằng sudo. Xem `README-Ubuntu.md` trong gói app để cài thư viện hệ thống và thiết lập lịch chạy.
+Máy cần mạng để trình cài đặt tải các thư viện còn thiếu và mật khẩu quản trị của máy để cài gói. App đã kèm Python và Chromium; người dùng không cần cài Python. Chỉ hỗ trợ Ubuntu Desktop 24.04 x64, chưa hỗ trợ ARM hoặc Ubuntu cũ hơn.
+
+Nếu mở `.deb` không hiện App Center, chạy trong thư mục chứa file:
+
+```bash
+sudo apt install ./Daymatic-1.2.4-ubuntu-24.04-amd64.deb
+```
+
+Sau khi cài, đăng nhập desktop bằng tài khoản người dùng bình thường, mở Daymatic từ menu, đăng nhập tài khoản trong app và kiểm tra Preview trước khi bật tự động. Mở khóa GNOME login keyring nếu được yêu cầu. Không chạy app bằng sudo.
 
 Lịch, lịch sử và dữ liệu Ubuntu nằm trong `~/.local/share/AutoTimesheet` nếu bạn không đổi `XDG_DATA_HOME`. Tài khoản và khóa mã hóa phiên được lưu trong keyring của máy. Chuyển từ Windows sang Ubuntu cần đăng nhập và Preview lại.
 
 Luôn kiểm tra đúng project/task bằng Preview và xác nhận trước khi bật tự động. Không bật đồng thời hai bản app trên hai hệ điều hành cho cùng tài khoản.
+
+Trong Cài đặt, dùng **Cài lịch Ubuntu** để cài lịch tự động. Máy phải bật và đăng nhập phiên desktop với keyring đã mở khóa. Đóng app trước khi nâng cấp. Trước khi gỡ bản Ubuntu, tắt tự động và gỡ lịch Ubuntu trong Cài đặt; gỡ gói vẫn giữ dữ liệu cá nhân/keyring.
 
 ## Cập nhật
 
