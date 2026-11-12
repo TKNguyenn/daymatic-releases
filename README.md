@@ -55,12 +55,12 @@ Theo dõi lịch trên một màn hình, thay kế hoạch cho ngày đặc bi�
 
 ## Tải và cài đặt
 
-**Phiên bản hiện tại: [DayMatic 1.2.4](https://github.com/TKNguyenn/daymatic-releases/releases/tag/v1.2.4).** App đã kèm Python và Chromium; bạn không cần cài Python riêng.
+**Phiên bản hiện tại: [DayMatic 1.2.5](https://github.com/TKNguyenn/daymatic-releases/releases/tag/v1.2.5).** Bộ cài đã kèm Python và Chromium.
 
 | Hệ điều hành | Bộ cài | Cách cài |
 | --- | --- | --- |
-| **Windows x64** | [Tải bộ cài Windows (.exe)](https://github.com/TKNguyenn/daymatic-releases/releases/download/v1.2.4/Daymatic-Setup-1.2.4.exe) | Mở file và làm theo trình cài đặt. |
-| **Ubuntu Desktop 24.04 x64 / amd64** | [Tải bộ cài Ubuntu (.deb)](https://github.com/TKNguyenn/daymatic-releases/releases/download/v1.2.4/Daymatic-1.2.4-ubuntu-24.04-amd64.deb) | Mở bằng **App Center** → **Install**, rồi mở **Daymatic** từ menu ứng dụng. |
+| **Windows x64** | [Tải bộ cài Windows (.exe)](https://github.com/TKNguyenn/daymatic-releases/releases/download/v1.2.5/Daymatic-Setup-1.2.5.exe) | Mở file và làm theo trình cài đặt. |
+| **Ubuntu Desktop 24.04 x64 / amd64** | [Tải bộ cài Ubuntu (.deb)](https://github.com/TKNguyenn/daymatic-releases/releases/download/v1.2.5/Daymatic-1.2.5-ubuntu-24.04-amd64.deb) | Mở bằng **App Center** → **Install**, rồi mở **Daymatic** từ menu ứng dụng. |
 
 Ubuntu cần mạng để tải các thư viện hệ thống còn thiếu và mật khẩu quản trị của máy để cài gói. Bản Ubuntu hiện hỗ trợ **24.04 Desktop x64**, chưa hỗ trợ ARM hoặc các phiên bản Ubuntu cũ hơn.
 
@@ -70,7 +70,7 @@ Ubuntu cần mạng để tải các thư viện hệ thống còn thiếu và m
 Trong thư mục chứa file tải về, chạy:
 
 ```bash
-sudo apt install ./Daymatic-1.2.4-ubuntu-24.04-amd64.deb
+sudo apt install ./Daymatic-1.2.5-ubuntu-24.04-amd64.deb
 ```
 
 Sau khi cài, mở app từ menu bằng tài khoản người dùng bình thường; không chạy app bằng `sudo`.
@@ -98,6 +98,10 @@ Trong ứng dụng có **Hướng dẫn** kèm ảnh minh họa để bạn xem 
 
 ## Cập nhật phiên bản
 
-Tải bộ cài mới tại [Releases](https://github.com/TKNguyenn/daymatic-releases/releases) và đóng Daymatic trước khi nâng cấp. Trên Windows, chọn lại thư mục cài hiện tại để giữ dữ liệu. Trước khi gỡ bản Ubuntu, tắt tự động và gỡ lịch Ubuntu trong Cài đặt; gỡ gói vẫn giữ dữ liệu cá nhân và keyring.
+Nếu đang dùng **1.2.4**, hãy đóng Daymatic và cài **1.2.5** thủ công một lần. Trên Windows, chọn lại thư mục cài hiện tại để giữ dữ liệu. [Danh sách bộ cài](https://github.com/TKNguyenn/daymatic-releases/releases)
 
-Ứng dụng hiện chưa có tính năng tự tải/cài cập nhật. Repo này chứa phần giới thiệu, ảnh và các bản phát hành; source app được lưu riêng. Hai mục **Source code** do GitHub tự tạo chỉ nén tài liệu và ảnh của repo, không phải bộ cài ứng dụng.
+Từ **1.2.5**, bấm **Check for updates** dưới **Hướng dẫn** để kiểm tra ngay. Khi app đang chạy, Daymatic cũng kiểm tra sau 00:00 giờ Việt Nam mỗi ngày. Nếu có bản mới đúng hệ điều hành, app hỏi trước khi tải và cài. Ubuntu có thể yêu cầu mật khẩu quản trị.
+
+Trước khi gỡ bản Ubuntu, tắt tự động và gỡ lịch Ubuntu trong Cài đặt. Gỡ gói vẫn giữ dữ liệu cá nhân và keyring.
+
+Repo này chứa phần giới thiệu, ảnh và các bản phát hành. Hai mục **Source code** do GitHub tự tạo chứa tài liệu và ảnh của repo. Để cài ứng dụng, chọn file `.exe` hoặc `.deb` trong **Assets**.
